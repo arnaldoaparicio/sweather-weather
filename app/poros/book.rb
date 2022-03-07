@@ -4,6 +4,5 @@ class Book
     @isbn = attributes[:isbn]
     @title = attributes[:title]
     @publisher = attributes[:publisher]
-
   end
 end
