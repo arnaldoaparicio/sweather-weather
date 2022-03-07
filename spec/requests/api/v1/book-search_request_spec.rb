@@ -11,6 +11,9 @@ RSpec.describe 'Book Search API' do
 
     expect(book_search).to be_a(Hash)
     expect(book_search).to have_key(:data)
+    expect(book_search[:data][:attributes][:books].count).to eq(5)
+
+    expect(book_search[:data][:attributes][:destination]).to eq('denver,co')
 
   end
 end
