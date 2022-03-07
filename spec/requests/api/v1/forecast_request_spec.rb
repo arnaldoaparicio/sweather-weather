@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Forecast API' do
-  it 'gets the forecast based on coordinates', :vcr do
+  xit 'gets the forecast based on coordinates', :vcr do
 
     get '/api/v1/forecast?location=denver,co'
 
