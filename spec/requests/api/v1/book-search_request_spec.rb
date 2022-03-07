@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Book Search API API' do
+RSpec.describe 'Book Search API' do
   it 'gets the book info' do
     get '/api/v1/book-search?location=denver,co&quantity=5'
 
@@ -10,7 +10,7 @@ RSpec.describe 'Book Search API API' do
     book_search = JSON.parse(response.body, symbolize_names: true)
 
     expect(book_search).to be_a(Hash)
+    expect(book_search).to have_key(:data)
 
-    
   end
 end
