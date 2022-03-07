@@ -17,11 +17,9 @@ RSpec.describe BooksService do
     expect(search[:docs][0]).to have_key :title
     expect(search[:docs][0][:title]).to be_a String
 
-    expect(search[:docs][0]).to have_key :publiser
-    expect(search[:docs][0][:publiser]).to be_an Array
+    expect(search[:docs][0]).to have_key :publisher
+    expect(search[:docs][0][:publisher]).to be_an Array
 
-    expect(search[:docs][0]).to have_key :publiser
-    expect(search[:docs][0][:publiser]).to be_an Array
 
   end
 end
