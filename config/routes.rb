@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :forecast
       resources :coordinates
       resources :backgrounds
+      get '/book-search', to: 'books#index'
     end
   end
 end
