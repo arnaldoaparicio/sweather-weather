@@ -9,13 +9,13 @@ RSpec.describe 'Forecast API' do
     expect(response.status).to eq(200)
 
     forecasts = JSON.parse(response.body, symbolize_names: true)
-
+    
     expect(forecasts).to be_a(Hash)
 
-    expect(forecasts).to have_key :current
+    expect(forecasts[:data][:attributes]).to have_key :current_weather
 
-    expect(forecasts).to have_key :hourly
+    expect(forecasts[:data][:attributes]).to have_key :hourly_weather
 
-    expect(forecasts).to have_key :daily
+    expect(forecasts[:data][:attributes]).to have_key :daily_weather
   end
 end
