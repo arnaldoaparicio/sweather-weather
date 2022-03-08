@@ -76,6 +76,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.filter_sensitive_data('<fake_weather>') { ENV['weather_key'] }
   config.filter_sensitive_data('<fake_geo>') { ENV['geo_key'] }
+  config.filter_sensitive_data('<fake_unsplash>') { ENV['unsplash_key'] }
   config.configure_rspec_metadata!
   config.allow_http_connections_when_no_cassette = true
 end
