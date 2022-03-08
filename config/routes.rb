@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :forecast
       resources :coordinates
       resources :backgrounds
+      resources :users
     end
   end
 end
