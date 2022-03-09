@@ -1,8 +1,4 @@
 class BackgroundSerializer
-  # include JSONAPI::Serializer
-  # set_type :image
-  # # attributes :image
-  # attributes :id, :location, :image_url, :credit
   def self.image_json(image)
     {
       "data": {
