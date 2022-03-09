@@ -8,6 +8,7 @@ class ForecastFacade
     Forecast.weather_coordinates(latitude, longitude)[:daily].first(5).map do |daily|
       DailyWeather.new(daily)
     end
+
   end
 
   def self.hourly_weather(latitude, longitude)
@@ -19,4 +20,6 @@ class ForecastFacade
   def self.all_weather_forecasts(latitude, longitude)
     Weather.new(ForecastService.weather_coordinates(latitude, longitude))
   end
-end
+
+
+  end
