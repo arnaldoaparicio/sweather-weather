@@ -6,6 +6,8 @@ Rails.application.routes.draw do
       resources :coordinates
       resources :backgrounds
       resources :users
+      resources :sessions
+      resources :road_trip
     end
   end
 end
