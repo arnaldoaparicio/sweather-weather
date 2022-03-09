@@ -14,7 +14,6 @@ class RoadTripFacade
     roadtrip = RoadTripService.roadtrip_directions(origin, destination)
 
     index = (roadtrip[:route][:time].to_f / 3600).round - 1
-
     if roadtrip[:route][:routeError][:errorCode] == 2
       'Impossible route'
     else

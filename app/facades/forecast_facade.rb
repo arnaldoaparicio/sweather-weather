@@ -20,6 +20,4 @@ class ForecastFacade
   def self.all_weather_forecasts(latitude, longitude)
     Weather.new(ForecastService.weather_coordinates(latitude, longitude))
   end
-
-
-  end
+end

@@ -4,5 +4,4 @@ class Coordinate
     @latitude = data[:latLng][:lat]
     @longitude = data[:latLng][:lng]
   end
-
 end

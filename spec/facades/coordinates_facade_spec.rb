@@ -5,7 +5,5 @@ RSpec.describe CoordinatesFacade do
     coordinates = CoordinatesFacade.get_coordinates('denver', 'co')
 
     expect(coordinates).to be_a Coordinate
-
-
   end
 end
