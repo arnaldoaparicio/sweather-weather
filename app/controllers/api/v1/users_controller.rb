@@ -5,7 +5,7 @@ class Api::V1::UsersController < ApplicationController
     if user.save
       render json: UsersSerializer.new(user), status: 201
     else
-      render error: { error: 'Unable to create user. Invalid and/or empty field'}, status: 400
+      render json: { error: 'Unable to create user. Invalid and/or empty field'}, status: 400
     end
   end
 
