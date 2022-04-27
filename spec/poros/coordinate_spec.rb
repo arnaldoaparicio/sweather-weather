@@ -10,6 +10,7 @@ RSpec.describe Coordinate do
 
     coordinate = Coordinate.new(results)
 
+    
     expect(coordinate).to be_an_instance_of(Coordinate)
     expect(coordinate.latitude).to eq(3.342342)
     expect(coordinate.longitude).to eq(-5.23424)
