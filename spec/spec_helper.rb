@@ -14,6 +14,15 @@ SimpleCov.start
 # the additional setup, and require it from the spec files that actually need
 # it.
 #
+
+require 'webmock/rspec'
+require 'vcr'
+
+VCR.configure do |c|
+  c.before_record do |i|
+    i.response.body.force_encoding('UTF-8')
+  end
+end
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
