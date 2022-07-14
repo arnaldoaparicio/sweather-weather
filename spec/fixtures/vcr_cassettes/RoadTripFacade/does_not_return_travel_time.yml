@@ -19,17 +19,17 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Thu, 14 Jul 2022 13:21:13 GMT
+      - Thu, 14 Jul 2022 14:04:36 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '278'
       Set-Cookie:
-      - JSESSIONID=493B5C1DB849F793BB7F58A4F8C25A13; Path=/directions; HttpOnly
+      - JSESSIONID=5C95A6215A4887BB2F4533CEB60A16AC; Path=/directions; HttpOnly
       Expires:
       - Mon, 20 Dec 1998 01:00:00 GMT
       Last-Modified:
-      - Thu, 14 Jul 2022 13:21:13 GMT
+      - Thu, 14 Jul 2022 14:04:36 GMT
       Cache-Control:
       - no-cache, must-revalidate
       Pragma:
@@ -47,5 +47,5 @@ http_interactions:
       string: '{"route":{"routeError":{"errorCode":2,"message":""}},"info":{"statuscode":402,"copyright":{"imageAltText":"©
         2022 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","text":"©
         2022 MapQuest, Inc."},"messages":["We are unable to route with the given locations."]}}'
-  recorded_at: Thu, 14 Jul 2022 13:21:13 GMT
+  recorded_at: Thu, 14 Jul 2022 14:04:36 GMT
 recorded_with: VCR 6.0.0
