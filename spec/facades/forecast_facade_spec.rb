@@ -21,7 +21,7 @@ RSpec.describe ForecastFacade do
     end
   end
 
-  it 'describes the hourly weather for eight hours' do
+  it 'describes the hourly weather for eight hours', :vcr do
     hourly_weather = ForecastFacade.hourly_weather(39.738453, -104.984853)
 
     expect(hourly_weather).to be_an Array
@@ -33,6 +33,21 @@ RSpec.describe ForecastFacade do
     end
   end
 
-  xit 'shows all weather forecasts' do
+  it 'shows all weather forecasts', :vcr do
+    all_weather = ForecastFacade.all_weather_forecasts(39.738453, -104.984853)
+
+    expect(all_weather).to be_a Weather
+
+    expect(all_weather.current_weather).to be_a CurrentWeather
+
+    expect(all_weather.daily_weather).to be_an Array
+    all_weather.daily_weather.each do |dw|
+      expect(dw).to be_a DailyWeather
+    end
+
+    expect(all_weather.hourly_weather).to be_an Array
+    all_weather.hourly_weather.each do |hw|
+      expect(hw).to be_a HourlyWeather
+    end
   end
 end
