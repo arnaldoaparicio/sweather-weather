@@ -12,12 +12,9 @@ RSpec.describe Weather do
           uvi: 0,
           visibility: 10000,
           weather: [icon: '01n']
-    }
+            }
 
-
-    
-
-    current = CurrentWeather.new(current)
-    expect(current).to be_an_instance_of(CurrentWeather)
+    current_weather = CurrentWeather.new(current)
+    expect(current_weather).to be_an_instance_of(CurrentWeather)
   end
 end
