@@ -16,6 +16,7 @@ RSpec.describe User, type: :model do
     expect(user).to be_an_instance_of(User)
     expect(user.email).to eq('sample@email.com')
     expect(user).to have_attribute(:password_digest)
+    expect(user).to have_attribute(:api_key)
   end
 
   it 'encrypts password' do
