@@ -1,6 +1,8 @@
 # Sweather Weather
 A Rails Backend application that exposes several external APIs to support a frontend application for planning roadtrips based on weather conditions.
 
+## Link to the API
+https://hidden-brook-84676.herokuapp.com/api/v1/forecast
 ## APIs 
 
 ### Retrieve weather for a city
