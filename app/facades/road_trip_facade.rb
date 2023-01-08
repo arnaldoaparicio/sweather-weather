@@ -2,7 +2,7 @@ class RoadTripFacade
 
   def self.get_roadtrip(from, to)
     roadtrip = RoadTripService.roadtrip_directions(from, to)
-    if roadtrip[:route][:routeError][:errorCode] == 2
+    if roadtrip[:route].has_key?(:routeError)
       'Impossible route'
     else
       RoadTrip.new(roadtrip)
@@ -14,7 +14,7 @@ class RoadTripFacade
     roadtrip = RoadTripService.roadtrip_directions(origin, destination)
 
     index = (roadtrip[:route][:time].to_f / 3600).round - 1
-    if roadtrip[:route][:routeError][:errorCode] == 2
+    if roadtrip[:route].has_key?(:routeError)
       'Impossible route'
     else
       { temperature: hourly[:hourly][index][:temp], conditions: hourly[:hourly][index][:weather][0][:description] }
