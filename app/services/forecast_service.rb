@@ -1,6 +1,6 @@
 class ForecastService
   def self.conn
-    Faraday.new(url: 'https://api.openweathermap.org/data/2.5/onecall') do |faraday|
+    Faraday.new(url: 'https://api.openweathermap.org/data/3.0/onecall') do |faraday|
       faraday.params['appid'] = ENV['weather_key']
     end
   end
