@@ -1,8 +1,6 @@
 class ForecastService
   def self.conn
-    Faraday.new(url: 'https://api.openweathermap.org/data/2.5/onecall') do |faraday|
-      faraday.params['appid'] = ENV['weather_key']
-    end
+    Faraday.new(url: 'https://api.openweathermap.org/data/3.0/onecall')
   end
 
   def self.weather_coordinates(latitude, longitude)
@@ -11,6 +9,7 @@ class ForecastService
       request.params['lon'] = longitude
       request.params['units'] = 'imperial'
       request.params['exclude'] = 'minutely,alerts'
+      request.params['appid'] = ENV['weather_key']
     end
     JSON.parse(response.body, symbolize_names: true)
   end

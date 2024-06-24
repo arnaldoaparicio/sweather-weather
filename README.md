@@ -1,6 +1,11 @@
 # Sweather Weather
 A Rails Backend application that exposes several external APIs to support a frontend application for planning roadtrips based on weather conditions.
 
+## Update 06/24/2024
+- Migrate over to OpenWeather One Call API 3.0 from version 2.5.
+- Update secrets for fly.io deployment
+- Swapped out revoked MapQuest API key for a new one (Whoops!)
+
 ## Link to the API
 https://sweater-weather-aa.fly.dev
 ## APIs 
