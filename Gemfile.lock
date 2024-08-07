@@ -70,7 +70,7 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     bcrypt (3.1.20)
     bigdecimal (3.1.8)
-    bootsnap (1.18.3)
+    bootsnap (1.18.4)
       msgpack (~> 1.2)
     builder (3.3.0)
     byebug (11.1.3)
@@ -91,19 +91,19 @@ GEM
     crass (1.0.6)
     date (3.3.4)
     diff-lcs (1.5.1)
-    docile (1.4.0)
+    docile (1.4.1)
     erubi (1.13.0)
-    faraday (2.10.0)
+    faraday (2.10.1)
       faraday-net_http (>= 2.0, < 3.2)
       logger
-    faraday-net_http (3.1.0)
+    faraday-net_http (3.1.1)
       net-http
-    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86_64-darwin)
     figaro (1.2.0)
       thor (>= 0.14.0, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    hashdiff (1.1.0)
+    hashdiff (1.1.1)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     jsonapi-serializer (2.2.0)
@@ -138,18 +138,18 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.3)
-    nokogiri (1.16.6-arm64-darwin)
+    nokogiri (1.16.7-x86_64-darwin)
       racc (~> 1.4)
     orderly (0.1.1)
       capybara (>= 1.1)
       rspec (>= 2.14)
-    pg (1.5.6)
+    pg (1.5.7)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    public_suffix (6.0.0)
+    public_suffix (6.0.1)
     puma (3.12.6)
-    racc (1.8.0)
+    racc (1.8.1)
     rack (2.2.9)
     rack-test (2.1.0)
       rack (>= 1.3)
@@ -186,7 +186,7 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     regexp_parser (2.9.2)
-    rexml (3.3.1)
+    rexml (3.3.4)
       strscan
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -235,10 +235,10 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.16)
+    zeitwerk (2.6.17)
 
 PLATFORMS
-  arm64-darwin-23
+  x86_64-darwin-21
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -252,7 +252,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   pry
   puma (~> 3.11)
-  rails (~> 7.0.8.4)
+  rails (~> 7.0.8.1)
   rspec-rails
   rspec_junit_formatter
   shoulda-matchers
